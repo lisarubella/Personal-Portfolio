@@ -51,7 +51,7 @@ export function AboutEditorialSection() {
                 <div className="w-12 h-0.5 bg-primary-pink rounded-full" />
               </div>
 
-              <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   I'm Mona, an agentic AI developer and web designer with a passion for creating beautiful, functional digital experiences. My journey started with a curiosity about how things work, and it evolved into a mission to build solutions that matter.
                 </p>
@@ -61,17 +61,6 @@ export function AboutEditorialSection() {
                 <p>
                   When I'm not coding, you'll find me exploring new design trends, experimenting with AI tools, or diving deep into whatever technology catches my curiosity.
                 </p>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                <div className="glass rounded-lg p-4 bg-white/5 dark:bg-white/5 border border-gray-200 dark:border-gray-700/30">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Years of Experience</p>
-                  <p className="text-3xl font-bold text-primary-pink mt-2">3 months+</p>
-                </div>
-                <div className="glass rounded-lg p-4 bg-white/5 dark:bg-white/5 border border-gray-200 dark:border-gray-700/30">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Projects Completed</p>
-                  <p className="text-3xl font-bold text-primary-pink mt-2">5+</p>
-                </div>
               </div>
             </div>
 
@@ -132,7 +121,7 @@ export function AboutEditorialSection() {
                 <div className="w-12 h-0.5 bg-primary-pink rounded-full" />
               </div>
 
-              <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   I specialize in building modern web applications with a focus on user experience and performance. My toolkit spans the full stack, from elegant frontends to robust backends.
                 </p>
@@ -155,7 +144,7 @@ export function AboutEditorialSection() {
                   </h3>
                   <ul className="space-y-2">
                     {skillGroup.items.map((skill, idx) => (
-                      <li key={idx} className="text-sm text-gray-600 dark:text-gray-300 flex items-center">
+                      <li key={idx} className="text-sm text-gray-700 dark:text-gray-300 flex items-center">
                         <span className="w-1.5 h-1.5 bg-primary-pink rounded-full mr-2" />
                         {skill}
                       </li>
