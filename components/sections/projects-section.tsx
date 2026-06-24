@@ -83,12 +83,6 @@ export function ProjectsSection() {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="project-card glass rounded-2xl overflow-hidden h-full flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-500 dark:hover:shadow-gray-900/50">
-                {/* Project Image Placeholder */}
-                <div className={`bg-gradient-to-br ${project.gradient} h-48 flex items-center justify-center relative overflow-hidden group`}>
-                  <span className="text-6xl opacity-40 group-hover:scale-110 transition-transform duration-500">{project.icon}</span>
-                  <div className="absolute inset-0 shimmer-effect opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-
                 {/* Project Content */}
                 <div className="p-6 flex-grow flex flex-col justify-between">
                   <div>
