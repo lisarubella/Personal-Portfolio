@@ -1,5 +1,5 @@
 import { Header } from '@/components/header';
-import { ExpertiseSection } from '@/components/sections/expertise-section';
+import { AboutEditorialSection } from '@/components/sections/about-editorial-section';
 import { Footer } from '@/components/sections/footer';
 import Aurora from '@/components/Aurora';
 
@@ -24,7 +24,7 @@ export default function AboutPage() {
       {/* Content */}
       <div className="relative z-10">
         <Header />
-        <ExpertiseSection />
+        <AboutEditorialSection />
         <Footer />
       </div>
     </main>
