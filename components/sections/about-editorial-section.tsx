@@ -29,11 +29,11 @@ export function AboutEditorialSection() {
         {/* SECTION 1: About Hero */}
         <div className={`mb-32 transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className="space-y-6">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white font-jakarta leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white font-jakarta leading-tight">
               About Me
             </h1>
             <div className="w-16 h-1 bg-gradient-to-r from-primary-pink to-transparent rounded-full" />
-            <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
               I'm a passionate developer and designer crafting digital experiences that blend strategy, aesthetics, and functionality.
             </p>
           </div>
@@ -45,13 +45,13 @@ export function AboutEditorialSection() {
             {/* Left: Text Content */}
             <div className="space-y-6">
               <div>
-                <h2 className="text-4xl sm:text-5xl font-bold text-white font-jakarta mb-4 leading-tight">
+                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white font-jakarta mb-4 leading-tight">
                   Who I Am
                 </h2>
                 <div className="w-12 h-0.5 bg-primary-pink rounded-full" />
               </div>
 
-              <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                 <p>
                   I'm Mona, an agentic AI developer and web designer with a passion for creating beautiful, functional digital experiences. My journey started with a curiosity about how things work, and it evolved into a mission to build solutions that matter.
                 </p>
@@ -64,12 +64,12 @@ export function AboutEditorialSection() {
               </div>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
-                <div className="glass rounded-lg p-4">
-                  <p className="text-sm text-gray-400">Years of Experience</p>
+                <div className="glass rounded-lg p-4 bg-white/5 dark:bg-white/5 border border-gray-200 dark:border-gray-700/30">
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Years of Experience</p>
                   <p className="text-3xl font-bold text-primary-pink mt-2">3 months+</p>
                 </div>
-                <div className="glass rounded-lg p-4">
-                  <p className="text-sm text-gray-400">Projects Completed</p>
+                <div className="glass rounded-lg p-4 bg-white/5 dark:bg-white/5 border border-gray-200 dark:border-gray-700/30">
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Projects Completed</p>
                   <p className="text-3xl font-bold text-primary-pink mt-2">5+</p>
                 </div>
               </div>
@@ -82,22 +82,22 @@ export function AboutEditorialSection() {
                 <img
                   src="https://i.pinimg.com/1200x/cd/b4/39/cdb439d8bd8e4c35ef99acc1e1f3375a.jpg"
                   alt="Mona's Portrait"
-                  className="w-full h-full object-cover rounded-2xl border border-gray-700/30"
+                  className="w-full h-full object-cover rounded-2xl border border-gray-200 dark:border-gray-700/30"
                 />
                 {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent dark:from-black/40 rounded-2xl" />
               </div>
             </div>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="my-32 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+        <div className="my-32 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
 
         {/* SECTION 3: Values & Approach - Cards Grid */}
         <div className={`mb-32 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.2s' }}>
           <div className="mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white font-jakarta mb-4 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white font-jakarta mb-4 leading-tight">
               My Approach
             </h2>
             <div className="w-12 h-0.5 bg-primary-pink rounded-full" />
@@ -107,18 +107,18 @@ export function AboutEditorialSection() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="glass rounded-xl p-6 hover:border-primary-pink/50 transition-all duration-300 hover:-translate-y-1"
+                className="glass rounded-xl p-6 bg-gray-50/50 dark:bg-white/5 border border-gray-200 dark:border-gray-700/50 hover:border-primary-pink/50 transition-all duration-300 hover:-translate-y-1"
                 style={{ transitionDelay: `${0.3 + index * 0.1}s` }}
               >
-                <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{value.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{value.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Divider */}
-        <div className="my-32 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+        <div className="my-32 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
 
         {/* SECTION 4: Skills - Two Column with Cards */}
         <div className={`mb-32 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.3s' }}>
@@ -126,13 +126,13 @@ export function AboutEditorialSection() {
             {/* Left: Skills Description */}
             <div className="space-y-6">
               <div>
-                <h2 className="text-4xl sm:text-5xl font-bold text-white font-jakarta mb-4 leading-tight">
+                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white font-jakarta mb-4 leading-tight">
                   Skills & Expertise
                 </h2>
                 <div className="w-12 h-0.5 bg-primary-pink rounded-full" />
               </div>
 
-              <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                 <p>
                   I specialize in building modern web applications with a focus on user experience and performance. My toolkit spans the full stack, from elegant frontends to robust backends.
                 </p>
@@ -147,7 +147,7 @@ export function AboutEditorialSection() {
               {skills.map((skillGroup, index) => (
                 <div
                   key={index}
-                  className="glass rounded-lg p-5 hover:border-primary-pink/50 transition-all duration-300 hover:-translate-y-1"
+                  className="glass rounded-lg p-5 bg-gray-50/50 dark:bg-white/5 border border-gray-200 dark:border-gray-700/30 hover:border-primary-pink/50 transition-all duration-300 hover:-translate-y-1"
                   style={{ transitionDelay: `${0.4 + index * 0.08}s` }}
                 >
                   <h3 className="text-sm font-semibold text-primary-pink mb-3 uppercase tracking-wider">
@@ -155,7 +155,7 @@ export function AboutEditorialSection() {
                   </h3>
                   <ul className="space-y-2">
                     {skillGroup.items.map((skill, idx) => (
-                      <li key={idx} className="text-sm text-gray-300 flex items-center">
+                      <li key={idx} className="text-sm text-gray-600 dark:text-gray-300 flex items-center">
                         <span className="w-1.5 h-1.5 bg-primary-pink rounded-full mr-2" />
                         {skill}
                       </li>
@@ -168,16 +168,16 @@ export function AboutEditorialSection() {
         </div>
 
         {/* Divider */}
-        <div className="my-32 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+        <div className="my-32 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
 
         {/* SECTION 5: CTA */}
         <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.4s' }}>
           <div className="text-center space-y-6">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white font-jakarta leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white font-jakarta leading-tight">
               Let's Create Something<br />
               <span className="text-primary-pink">Amazing Together</span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               I'm always interested in hearing about new projects and opportunities.
             </p>
             <a
