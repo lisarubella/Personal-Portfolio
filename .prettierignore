@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+build
+dist
+.git
+.vscode
+.idea
+*.log
+.DS_Store
