@@ -40,7 +40,7 @@ export function ProcessSection() {
               style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
               borderRadius={20}
               glowColor="280 100 50"
-              backgroundColor="transparent"
+              backgroundColor="rgb(255 255 255 / 0.7)"
               colors={['#a78bfa', '#f472b6', '#60a5fa']}
               glowIntensity={1.1}
               edgeSensitivity={25}

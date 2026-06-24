@@ -81,7 +81,7 @@ export function ProjectsSection() {
               style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
               borderRadius={20}
               glowColor="280 100 50"
-              backgroundColor="transparent"
+              backgroundColor="rgb(255 255 255 / 0.7)"
               colors={['#c084fc', '#f472b6', '#38bdf8']}
               glowIntensity={1.2}
               edgeSensitivity={25}
