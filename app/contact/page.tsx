@@ -1,9 +1,14 @@
 import { Header } from '@/components/header';
-import { HeroSection } from '@/components/sections/hero-section';
+import { ContactSection } from '@/components/sections/contact-section';
 import { Footer } from '@/components/sections/footer';
 import Aurora from '@/components/Aurora';
 
-export default function Home() {
+export const metadata = {
+  title: 'Contact - Mona',
+  description: 'Get in touch with Mona for web development and design inquiries.',
+};
+
+export default function ContactPage() {
   return (
     <main className="min-h-screen relative overflow-hidden">
       {/* Aurora Background */}
@@ -19,7 +24,7 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-10">
         <Header />
-        <HeroSection />
+        <ContactSection />
         <Footer />
       </div>
     </main>

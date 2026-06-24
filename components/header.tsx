@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 import { MaskViewTransitionThemeToggle } from '@/components/ui/mask-view-transition-theme-toggle';
 
 export function Header() {
@@ -39,36 +40,36 @@ export function Header() {
           <div className="flex items-center gap-4">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#home"
+              <Link
+                href="/"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors font-medium"
               >
                 Home
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                href="/about"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors font-medium"
               >
                 About
-              </a>
-              <a
-                href="#process"
+              </Link>
+              <Link
+                href="/services"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors font-medium"
               >
-                Process
-              </a>
-              <a
-                href="#work"
+                Services
+              </Link>
+              <Link
+                href="/projects"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors font-medium"
               >
                 Work
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors font-medium"
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             <MaskViewTransitionThemeToggle />
@@ -97,41 +98,41 @@ export function Header() {
           className="fixed inset-0 top-16 z-30 bg-black/95 dark:bg-gray-950 backdrop-blur-xl md:hidden"
         >
           <div className="flex flex-col justify-center items-center gap-8 h-full">
-            <a
-              href="#home"
+            <Link
+              href="/"
               onClick={handleNavClick}
               className="text-white text-2xl font-semibold hover:text-primary-pink transition-colors"
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/about"
               onClick={handleNavClick}
               className="text-white text-2xl font-semibold hover:text-primary-pink transition-colors"
             >
               About
-            </a>
-            <a
-              href="#process"
+            </Link>
+            <Link
+              href="/services"
               onClick={handleNavClick}
               className="text-white text-2xl font-semibold hover:text-primary-pink transition-colors"
             >
-              Process
-            </a>
-            <a
-              href="#work"
+              Services
+            </Link>
+            <Link
+              href="/projects"
               onClick={handleNavClick}
               className="text-white text-2xl font-semibold hover:text-primary-pink transition-colors"
             >
               Work
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               onClick={handleNavClick}
               className="text-white text-2xl font-semibold hover:text-primary-pink transition-colors"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
