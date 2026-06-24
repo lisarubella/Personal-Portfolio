@@ -81,7 +81,7 @@ export function ProjectsSection() {
               style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
               borderRadius={20}
               glowColor="280 100 50"
-              backgroundColor="rgb(255 255 255 / 0.7)"
+              backgroundColor="transparent"
               colors={['#c084fc', '#f472b6', '#38bdf8']}
               glowIntensity={1.2}
               edgeSensitivity={25}
@@ -92,8 +92,8 @@ export function ProjectsSection() {
                 rel="noopener noreferrer"
                 className="project-card block h-full"
               >
-                {/* Project Content */}
-                <div className="p-6 flex flex-col justify-between h-full">
+                {/* Project Content with theme-aware background */}
+                <div className="p-6 flex flex-col justify-between h-full bg-white/70 dark:bg-gray-950/70 backdrop-blur-sm">
                   <div>
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white font-jakarta">
