@@ -1,19 +1,18 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleGetInTouch = () => {
+    router.push('/contact');
   };
 
   return (
@@ -61,7 +60,7 @@ export function HeroSection() {
           }`}
           style={{ transitionDelay: '0.3s' }}
         >
-          <button onClick={scrollToContact} className="btn-primary">
+          <button onClick={handleGetInTouch} className="btn-primary">
             Get in Touch
             <span className="arrow-icon">→</span>
           </button>
