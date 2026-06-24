@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
+import BorderGlow from '@/components/BorderGlow';
 
 interface Project {
   title: string;
@@ -74,17 +75,25 @@ export function ProjectsSection() {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 auto-rows-max">
           {projects.map((project, index) => (
-            <Link
+            <BorderGlow
               key={index}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card-hover fade-in-up animate-float"
-              style={{ animationDelay: `${index * 0.15}s` }}
+              className="fade-in-up animate-float"
+              style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
+              borderRadius={20}
+              glowColor="280 100 50"
+              backgroundColor="transparent"
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+              glowIntensity={1.2}
+              edgeSensitivity={25}
             >
-              <div className="project-card glass rounded-2xl overflow-hidden h-full flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-500 dark:hover:shadow-gray-900/50">
+              <Link
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card block h-full"
+              >
                 {/* Project Content */}
-                <div className="p-6 flex-grow flex flex-col justify-between">
+                <div className="p-6 flex flex-col justify-between h-full">
                   <div>
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white font-jakarta">
@@ -109,8 +118,8 @@ export function ProjectsSection() {
                     ))}
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </BorderGlow>
           ))}
         </div>
       </div>

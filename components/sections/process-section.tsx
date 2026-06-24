@@ -1,5 +1,7 @@
 'use client';
 
+import BorderGlow from '@/components/BorderGlow';
+
 export function ProcessSection() {
   const processes = [
     {
@@ -32,8 +34,18 @@ export function ProcessSection() {
         {/* Process Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {processes.map((process, index) => (
-            <div key={index} className="process-card fade-in-up animate-float hover:scale-105 transition-transform duration-500" style={{ animationDelay: `${index * 0.15}s` }}>
-              <div className="glass rounded-2xl p-8 h-full hover:shadow-xl transition-all duration-300">
+            <BorderGlow
+              key={index}
+              className="process-card fade-in-up animate-float"
+              style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
+              borderRadius={20}
+              glowColor="280 100 50"
+              backgroundColor="transparent"
+              colors={['#a78bfa', '#f472b6', '#60a5fa']}
+              glowIntensity={1.1}
+              edgeSensitivity={25}
+            >
+              <div className="p-8 h-full flex flex-col">
                 <div className="text-5xl font-bold text-gradient mb-4 group-hover:scale-110 transition-transform">
                   {process.number}
                 </div>
@@ -44,7 +56,7 @@ export function ProcessSection() {
                   {process.description}
                 </p>
               </div>
-            </div>
+            </BorderGlow>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import CardSwap, { Card } from '@/components/CardSwap';
+import BorderGlow from '@/components/BorderGlow';
 
 export function ExpertiseSection() {
   const expertise = [
@@ -39,11 +40,20 @@ export function ExpertiseSection() {
             >
               {expertise.map((item, index) => (
                 <Card key={index} className="expertise-card">
-                  <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-pink-400/20 to-purple-400/20 dark:from-pink-900/30 dark:to-purple-900/30 backdrop-blur-sm border border-white/20 dark:border-white/10">
-                    <span className="text-2xl font-cravelo text-gray-900 dark:text-white text-center">
-                      {item.label}
-                    </span>
-                  </div>
+                  <BorderGlow
+                    borderRadius={16}
+                    glowColor="280 100 50"
+                    backgroundColor="transparent"
+                    colors={['#c084fc', '#f472b6', '#60a5fa']}
+                    glowIntensity={1.0}
+                    edgeSensitivity={30}
+                  >
+                    <div className="w-full h-full flex flex-col items-center justify-center p-6">
+                      <span className="text-2xl font-cravelo text-gray-900 dark:text-white text-center">
+                        {item.label}
+                      </span>
+                    </div>
+                  </BorderGlow>
                 </Card>
               ))}
             </CardSwap>
