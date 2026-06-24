@@ -14,13 +14,22 @@
   top: 50%;
   left: 50%;
   border-radius: 12px;
-  border: 1px solid #fff;
-  background: #000;
+  border: 1px solid rgb(255 255 255 / 0.2);
+  background: rgb(255 255 255 / 0.05);
+  color: rgb(17 24 39);
+  backdrop-filter: blur(10px);
 
   transform-style: preserve-3d;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: rgb(255 255 255 / 0.08);
+    color: rgb(255 255 255);
+  }
 }
 
 @media (max-width: 768px) {

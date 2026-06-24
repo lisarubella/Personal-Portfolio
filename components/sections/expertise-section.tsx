@@ -27,10 +27,10 @@ export function ExpertiseSection() {
           </div>
 
           {/* Right: CardSwap Animation */}
-          <div className="relative h-96 md:h-80 flex justify-center lg:justify-end">
+          <div className="relative h-96 md:h-full flex justify-center lg:justify-end">
             <CardSwap
-              width={300}
-              height={200}
+              width={380}
+              height={280}
               cardDistance={50}
               verticalDistance={60}
               delay={4000}
