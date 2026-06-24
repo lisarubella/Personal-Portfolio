@@ -66,11 +66,11 @@ export function AboutEditorialSection() {
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="glass rounded-lg p-4">
                   <p className="text-sm text-gray-400">Years of Experience</p>
-                  <p className="text-3xl font-bold text-primary-pink mt-2">5+</p>
+                  <p className="text-3xl font-bold text-primary-pink mt-2">3 months+</p>
                 </div>
                 <div className="glass rounded-lg p-4">
                   <p className="text-sm text-gray-400">Projects Completed</p>
-                  <p className="text-3xl font-bold text-primary-pink mt-2">50+</p>
+                  <p className="text-3xl font-bold text-primary-pink mt-2">5+</p>
                 </div>
               </div>
             </div>
@@ -78,13 +78,14 @@ export function AboutEditorialSection() {
             {/* Right: Image Placeholder / Visual Element */}
             <div className="relative h-96 sm:h-full min-h-96">
               <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                {/* Image Collage Effect */}
-                <div className="w-full h-full bg-gradient-to-br from-primary-pink/20 via-purple-500/20 to-blue-500/20 backdrop-blur-sm border border-gray-700/30 rounded-2xl flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <div className="text-6xl mb-4">📸</div>
-                    <p className="text-sm">Your portrait or image collage here</p>
-                  </div>
-                </div>
+                {/* Portrait Image */}
+                <img
+                  src="https://i.pinimg.com/1200x/cd/b4/39/cdb439d8bd8e4c35ef99acc1e1f3375a.jpg"
+                  alt="Mona's Portrait"
+                  className="w-full h-full object-cover rounded-2xl border border-gray-700/30"
+                />
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl" />
               </div>
             </div>
           </div>
